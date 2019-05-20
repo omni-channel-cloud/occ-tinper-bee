@@ -29,7 +29,7 @@ tinper-bee 包含丰富的react组件
 
 ## 开始使用
 ```
-import { Button } from 'tinper-bee';
+import { Button } from 'occ-tinper-bee';
 
 ReactDOM.render(<Button />, mountNode);
 
@@ -40,7 +40,7 @@ ReactDOM.render(<Button />, mountNode);
 
 - 直接从github获取我们的源码
 ```
-git clone git@github.com:iuap-design/tinper-bee.git
+git clone git@github.com:omni-channel-cloud/occ-tinper-bee.git
 ```
 
 - 使用CDN
@@ -49,7 +49,7 @@ git clone git@github.com:iuap-design/tinper-bee.git
 - 使用npm安装
 
 ```
-npm install --save tinper-bee
+npm install --save occ-tinper-bee
 ```
 
 
@@ -69,8 +69,8 @@ npm install --save tinper-bee
 │      component.css
 │
 ├─build
-│      tinper-bee.js
-│      tinper-bee.min.js
+│      occ-tinper-bee.js
+│      occ-tinper-bee.min.js
 │
 └─
 
@@ -126,7 +126,7 @@ tinper-bee 使用 [gulp.js](http://gulpjs.com/) 和 [webpack](https://webpack.gi
 克隆项目文件:
 
 ```
-$ git clone git@github.com:iuap-design/tinper-bee.git
+git clone git@github.com:omni-channel-cloud/occ-tinper-bee.git
 ```
 
 然后进入目录安装依赖：
