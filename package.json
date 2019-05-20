@@ -1,6 +1,6 @@
 {
   "name": "occ-tinper-bee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Base tinper-bee 2.0.10-beta.2: React Components living for enterprise-class pc backend application",
   "main": "environment.js",
   "scripts": {
