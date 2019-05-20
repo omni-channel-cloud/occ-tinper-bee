@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/omni-channel-cloud/occ-tinper-bee/issues"
   },
-  "homepage": "https://github.com/iuap-design/tinper-bee#readme",
+  "homepage": "https://github.com/omni-channel-cloud/occ-tinper-bee",
   "devDependencies": {
     "autoprefixer": "^7.1.6",
     "console-polyfill": "^0.2.2",

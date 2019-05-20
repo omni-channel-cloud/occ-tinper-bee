@@ -33,12 +33,12 @@
 - npm
 
 ```
-npm install --save tinper-bee
+npm install --save occ-tinper-bee
 ```
 
 - From github
 ```
-git clone git@github.com:iuap-design/tinper-bee.git
+git clone git@github.com:omni-channel-cloud/occ-tinper-bee.git
 ```
 
 - CDN
@@ -48,7 +48,7 @@ git clone git@github.com:iuap-design/tinper-bee.git
 ### use
 
 ```
-import { Button } from 'tinper-bee';
+import { Button } from 'occ-tinper-bee';
 
 ReactDOM.render(<Button />, mountNode);
 
@@ -70,8 +70,8 @@ V 2.0.2
 │      component.css
 │
 ├─build
-│      tinper-bee.js
-│      tinper-bee.min.js
+│      occ-tinper-bee.js
+│      occ-tinper-bee.min.js
 │
 └─
 
@@ -123,18 +123,18 @@ webpack.conf.js
 
 ### Tools
 
-tinper-bee use [gulp.js](http://gulpjs.com/) and [webpack](https://webpack.github.io/) build the project.
+occ-tinper-bee use [gulp.js](http://gulpjs.com/) and [webpack](https://webpack.github.io/) build the project.
 
 clone:
 
 ```
-$ git clone git@github.com:iuap-design/tinper-bee.git
+$ git clone git@github.com:omni-channel-cloud/occ-tinper-bee.git
 ```
 
 install：
 
 ```
-$ cd tinper-bee && npm install
+$ cd occ-tinper-bee && npm install
 ```
 
 build：
