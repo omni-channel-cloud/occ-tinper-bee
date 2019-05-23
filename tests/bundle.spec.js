@@ -10,7 +10,7 @@ var components = Object.keys(pkg.devDependencies).filter(function (item) {
 var _ = require('lodash');
 var expect = require('expect.js');
 
-var tinperBee = require('../build/tinper-bee');
+var tinperBee = require('../build/occ-tinper-bee');
 
 
 describe('bundle', function () {
