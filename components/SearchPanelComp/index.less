@@ -1,0 +1,175 @@
+.from-item-container {
+   margin-top: 15px;
+   font-size: 12px;
+   .form-item {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+   }
+
+   .u-form-item {
+      width: 210px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 45px;
+      padding: 0;
+      min-height: auto;
+      .item {
+         width: 100%;
+         display: flex;
+         align-items: center;
+         .asterisk {
+            width: 20px;
+            height: 28px;
+            position: relative;
+            .mast {
+               position: absolute;
+               right: 0;
+               top: 0;
+            }
+         }
+         .item-content {
+            flex: 1;
+         }
+         input {
+            height: 28px;
+            width: 100%;
+         }
+      }
+      .error {
+         width: 100%;
+         padding: 0 0 2px 20px;
+         box-sizing: border-box;
+      }
+
+      /*表单组件disable样式*/
+      .item.disabled {
+         .u-select-selection {
+            background: #f7f9fb;
+            border-color: #dfe1e6;
+            cursor: not-allowed;
+         }
+
+         .u-form-control[disabled] {
+            background: #f7f9fb;
+            border-color: #dfe1e6;
+            cursor: not-allowed;
+         }
+         .u-input-number .u-form-control {
+            height: 26px;
+         }
+         .item-content {
+            border-color: #dfe1e6;
+         }
+         .ref-input-wrap {
+            border-color: #dfe1e6;
+         }
+      }
+   }
+
+   .handle {
+      display: flex;
+      align-items: center;
+      margin-top: -20px;
+      margin-left: 20px;
+      height: 45px;
+      span {
+         padding-right: 5px;
+         box-sizing: border-box;
+         border-right: 1px solid #ccc;
+         margin-right: 5px;
+         cursor: pointer;
+         user-select: none;
+         font-size: 12px;
+         font-weight: unset;
+         color: rgb(67, 67, 67);
+      }
+      span:last-child {
+         border-right: unset;
+         margin-right: unset;
+      }
+   }
+
+   .number-range-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      .line {
+         margin: 0 5px;
+      }
+   }
+
+   /*覆盖原生UI组件样式*/
+   .u-select div.u-select-selection {
+      border-radius: 3px;
+      height: 28px;
+      border: 1px solid #a5adba;
+   }
+   .u-select-sm .u-select-selection-rendered {
+      line-height: 26px;
+   }
+
+   .datepicker-container .datepicker-input-group .u-form-control {
+      border-radius: 3px;
+      height: 28px;
+      border: 1px solid #a5adba;
+      width: 100%;
+   }
+
+   .u-input-group.simple .u-input-group-btn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 20px;
+      height: 26px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      i.uf {
+         padding: 0;
+      }
+   }
+   .u-form-item .calendar-picker,
+   .u-form-item .datepicker-container {
+      flex: 1;
+   }
+   .u-input-number.u-input-group.simple {
+      display: flex;
+      border: 1px solid #a5adba;
+      height: 28px;
+      input.u-form-control {
+         border: none;
+      }
+   }
+
+   .u-input-number.u-input-group.simple .u-input-group-btn .icon-group {
+      height: 26px;
+   }
+   .ref-input-wrap span.u-input-group.simple input.u-form-control {
+      border: none;
+      height: 26px;
+   }
+   .ref-input-wrap {
+      border-radius: 3px;
+      border: 1px solid #a5adba;
+      height: 28px;
+   }
+
+   div.u-select-disabled.u-select div.u-select-selection {
+      border-bottom: 1px solid #a5adba;
+   }
+   .u-select-selection-rendered {
+      line-height: 26px;
+   }
+}
+
+.from-item-container.more {
+   width: 100%;
+}
+
+.from-item-container.less {
+   position: relative;
+   width: 550px;
+}
