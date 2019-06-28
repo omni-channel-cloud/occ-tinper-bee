@@ -254,6 +254,11 @@ const mockData = {
                 type: "combo",
                 key: "comboField",
                 enumkey: "gender",
+                dataSource: [
+                  { id: "111", code: "111", name: "选项1" },
+                  { id: "222", code: "222", name: "选项2" },
+                  { id: "333", code: "333", name: "选项3" }
+                ],
                 required: "1",
                 editable: "1",
                 visible: "1"
@@ -328,7 +333,7 @@ const DataSource = [
     phoneField: 13839991231,
     dateField: 1561184157000,
     datetimeField: 1561184157000,
-    booleanField: 1,
+    booleanField: 0,
     textareaField: "shduiahdiushaiudhsuahduisa",
     comboField: "下拉",
     docreferField: "自定义档案",
@@ -349,7 +354,7 @@ const DataSource = [
   }
 ];
 
-class example extends Component {
+class IndexView extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -559,7 +564,21 @@ class example extends Component {
       backSource: true,
       sortFun: this.sortFun
     };
-
+    const newColumn = mockData.schema.tabs[0].comps[0].items;
+    // const returnColumns = [];
+    //     columns.schema.tabs.forEach(tabItem => {
+    //       tabItem.comps[0].items.forEach((item, dataIndex) => {
+    //         returnColumns.push({
+    //           title: item.label,
+    //           dataIndex: dataIndex,
+    //           key: item.key,
+    //           width: 140,
+    //           render: (text, record, index) => {
+    //             return this.columnsRender(record, item);
+    //           }
+    //         });
+    //       });
+    //     });
     return (
       <div className="single-table-query">
         <Loading showBackDrop={true} show={showLoading} fullScreen={true} />
@@ -573,7 +592,7 @@ class example extends Component {
         <div className="gird-parent">
           <Grid
             ref={el => (this.grid = el)} //存模版
-            columns={mockData}
+            columns={newColumn}
             // columns={this.gridColumn}
             // data={queryObj.list}
             data={DataSource}
@@ -595,4 +614,4 @@ class example extends Component {
   }
 }
 
-export default example;
+export default IndexView;
